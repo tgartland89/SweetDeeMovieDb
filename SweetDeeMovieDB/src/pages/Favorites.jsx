@@ -4,7 +4,7 @@ export default function Favorites() {
   return (
     <div>Favorites<br>
     </br>
-      4 Paws 🐾 Up!
+      2 Paws 🐾 Up!
     </div>
     
   )
