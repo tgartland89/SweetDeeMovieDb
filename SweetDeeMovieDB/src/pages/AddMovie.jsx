@@ -1,8 +1,9 @@
 import React from 'react'
 
+
 function AddMovie() {
   return (
-    <div>AddMovie</div>
+    <div>Add Movie</div>
   )
 }
 
