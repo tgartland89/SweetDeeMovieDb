@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Favorites() {
-  const [favorites, setFavorites] = useState([]);
-
+export default function Favorites({ favorites }) {
   return (
     <div>
       <h1>Favorites</h1>

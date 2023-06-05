@@ -1,11 +1,12 @@
+// MoviePage.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-export default function MoviePage() {
+export default function MoviePage({ favorites, onToggleFavorite }) {
   const { id } = useParams();
   const [movie, setMovie] = useState(null);
-  const [isFavorite, setIsFavorite] = useState(false)
+  const [isFavorite, setIsFavorite] = useState(false);
 
   useEffect(() => {
     const fetchMovieData = async () => {
@@ -21,13 +22,17 @@ export default function MoviePage() {
 
     fetchMovieData();
   }, [id]);
-  
+
+  useEffect(() => {
+    if (movie) {
+      setIsFavorite(favorites.some((fav) => fav.imdbID === movie.imdbID));
+    }
+  }, [movie, favorites]);
+
   const handleToggleFavorite = () => {
-    setIsFavorite((prevState) => {
-      const newState = !prevState;
-      ToggleFavorite(newState ? movie : null);
-      return newState;
-    });
+    const newIsFavorite = !isFavorite;
+    setIsFavorite(newIsFavorite);
+    onToggleFavorite(newIsFavorite ? movie : null);
   };
 
   if (!movie) {

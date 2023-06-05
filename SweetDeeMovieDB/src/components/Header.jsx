@@ -7,9 +7,7 @@ function Header() {
       <nav>
         <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center' }}>
           <li style={{ marginRight: '1rem' }}>
-            <NavLink exact to="/" activeclassname="active">
-              Home
-            </NavLink>
+            <NavLink exact="true" to="/" activeclassname="active">Home</NavLink>
           </li>
           <li style={{ marginRight: '1rem' }}>
             <NavLink to="/addmovie" activeclassname="active">

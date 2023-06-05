@@ -1,3 +1,4 @@
+// App.jsx
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -6,7 +7,6 @@ import Favorites from './pages/Favorites';
 import AddMovie from './pages/AddMovie';
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
-
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -28,14 +28,12 @@ function App() {
   }, []);
 
   const handleToggleFavorite = (movie) => {
-    if (favorites.some((fav) => fav.imdbID === movie.imdbID)) {
+    if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
+      setFavorites((prevFavorites) => [...prevFavorites, movie]);
+    } else {
       setFavorites((prevFavorites) =>
         prevFavorites.filter((fav) => fav.imdbID !== movie.imdbID)
       );
-      console.log('Removed from favorites:', movie);
-    } else {
-      setFavorites((prevFavorites) => [...prevFavorites, movie]);
-      console.log('Added to favorites:', movie);
     }
   };
 
@@ -44,10 +42,12 @@ function App() {
       <Header movies={movies} />
       <Routes>
         <Route path="/" element={<Home movies={movies} />} />
-        <Route path="/favorites" element={<Favorites />} />
-        <Route path="/addmovie" element={<AddMovie />} />
-        <Route path="/movie/:id"element={<MoviePage onToggleFavorite={handleToggleFavorite} />}/>
         <Route path="/favorites" element={<Favorites favorites={favorites} />} />
+        <Route path="/addmovie" element={<AddMovie />} />
+        <Route
+          path="/movie/:id"
+          element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} />}
+        />
       </Routes>
     </Router>
   );
