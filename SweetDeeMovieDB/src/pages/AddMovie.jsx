@@ -3,8 +3,9 @@ import React from 'react'
 
 function AddMovie() {
   return (
-    <div>Add Movie</div>
+    <div>
+      <h1>Add Movie</h1>
+    </div>
   )
 }
-
 export default AddMovie
