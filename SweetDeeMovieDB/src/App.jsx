@@ -10,6 +10,7 @@ import MoviePage from './pages/MoviePage';
 
 function App() {
   const [movies, setMovies] = useState([]);
+  const [favorites, setFavorites] = useState([]);
 
   useEffect(() => {
     const fetchMovieData = async () => {
@@ -26,6 +27,18 @@ function App() {
     fetchMovieData();
   }, []);
 
+  const handleToggleFavorite = (movie) => {
+    if (favorites.some((fav) => fav.imdbID === movie.imdbID)) {
+      setFavorites((prevFavorites) =>
+        prevFavorites.filter((fav) => fav.imdbID !== movie.imdbID)
+      );
+      console.log('Removed from favorites:', movie);
+    } else {
+      setFavorites((prevFavorites) => [...prevFavorites, movie]);
+      console.log('Added to favorites:', movie);
+    }
+  };
+
   return (
     <Router>
       <Header movies={movies} />
@@ -33,7 +46,8 @@ function App() {
         <Route path="/" element={<Home movies={movies} />} />
         <Route path="/favorites" element={<Favorites />} />
         <Route path="/addmovie" element={<AddMovie />} />
-        <Route path="/movie/:id" element={<MoviePage />} />
+        <Route path="/movie/:id"element={<MoviePage onToggleFavorite={handleToggleFavorite} />}/>
+        <Route path="/favorites" element={<Favorites favorites={favorites} />} />
       </Routes>
     </Router>
   );
