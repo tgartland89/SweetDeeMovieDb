@@ -7,8 +7,6 @@ import AddMovie from './pages/AddMovie';
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
 
-
-
 function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
@@ -47,6 +45,7 @@ function App() {
       );
     }
   };
+
   const handleSearch = (query) => {
     if (query) {
       const filteredMovies = movies.filter((m) =>
@@ -57,16 +56,34 @@ function App() {
       fetchMovieData(); // Call the fetchMovieData function here
     }
   };
+
   return (
-  <Router>
-    <Header onSearch={handleSearch} />
-    <Routes>
-      <Route path="/"element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} />}/>
-      <Route path="/favorites" element={<Favorites favorites={favorites} />}/>
-      <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />}/>
-      <Route path="/movie/:id" element={ <MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />}/>
-    </Routes>
-</Router>
+    <Router>
+      <div className="App">
+        <Header onSearch={handleSearch} />
+        <div className="content">
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <Home
+                  movies={movies}
+                  favorites={favorites}
+                  onMovieClick={handleMovieClick}
+                  onToggleFavorite={handleToggleFavorite}
+                />
+              }
+            />
+            <Route path="/favorites" element={<Favorites favorites={favorites} />} />
+            <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
+            <Route
+              path="/movie/:id"
+              element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />}
+            />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
