@@ -4,7 +4,9 @@ export default function Search({ onSearch }) {
   const [query, setQuery] = useState('');
 
   const handleInputChange = (event) => {
-    setQuery(event.target.value);
+    const query = event.target.value;
+    setQuery(query);
+    onSearch(query); // Call the onSearch function whenever the input value changes
   };
   
   <input type="text" value={query} onChange={handleInputChange} />

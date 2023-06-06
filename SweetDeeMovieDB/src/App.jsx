@@ -7,23 +7,24 @@ import AddMovie from './pages/AddMovie';
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
 
+
 function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
 
-  useEffect(() => {
-    const fetchMovieData = async () => {
-      try {
-        const response = await axios.get(
-          'http://www.omdbapi.com/?apikey=3deebcb6&s=dog&type=movie&plot=short&page=1&r=json'
-        );
-        setMovies(response.data.Search);
-      } catch (error) {
-        console.error('Error fetchingmovie data:', error);
-      }
-    };
+  const fetchMovieData = async () => {
+    try {
+      const response = await axios.get(
+        'http://www.omdbapi.com/?apikey=3deebcb6&s=dog&type=movie&plot=short&page=1&r=json'
+      );
+      setMovies(response.data.Search);
+    } catch (error) {
+      console.error('Error fetching movie data:', error);
+    }
+  };
 
+  useEffect(() => {
     fetchMovieData();
   }, []);
 
@@ -46,11 +47,15 @@ function App() {
     }
   };
   const handleSearch = (query) => {
-    const filteredMovies = movies.filter((m) =>
-    m.Title.toLowerCase().includes(query.toLowerCase())
-  );
-  setMovies(filteredMovies);
-};
+    if (query) {
+      const filteredMovies = movies.filter((m) =>
+        m.Title.toLowerCase().includes(query.toLowerCase())
+      );
+      setMovies(filteredMovies);
+    } else {
+      fetchMovieData(); // Call the fetchMovieData function here
+    }
+  };
   return (
   <Router>
     <Header onSearch={handleSearch} />
