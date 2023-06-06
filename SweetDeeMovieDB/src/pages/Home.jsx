@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Home({ movies, onMovieClick }) {
+export default function Home({ movies, onMovieClick, onToggleFavorite, favorites }) {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
+  };
+
+  const handleFavoriteClick = (movie) => {
+    onToggleFavorite(movie);
   };
 
   return (
@@ -36,6 +40,13 @@ export default function Home({ movies, onMovieClick }) {
           <h1>{selectedMovie.Title}</h1>
           <img src={selectedMovie.Poster} alt={selectedMovie.Title} />
           <p>Year: {selectedMovie.Year}</p>
+          <button
+            onClick={() => handleFavoriteClick(selectedMovie)}
+          >
+            {favorites.some((fav) => fav.imdbID === selectedMovie.imdbID)
+              ? 'Remove Favorite'
+              : 'Add Favorite'}
+          </button>
         </div>
       )}
     </div>
