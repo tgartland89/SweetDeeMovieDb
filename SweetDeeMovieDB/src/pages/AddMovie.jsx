@@ -5,23 +5,19 @@ function AddMovie({ onSubmit }) {
   const [imdbLink, setImdbLink] = useState('');
 
   const handleSubmit = async (event) => {
-  event.preventDefault();
+    event.preventDefault();
 
-  try {
-    const response = await axios.get(
-      `http://www.omdbapi.com/?apikey=3deebcb6&r=json&i=${extractImdbID(imdbLink)}`
-    );
-    const movie = response.data;
-    onSubmit(movie);
-
-    // Update the db.json file
-    const updatedMovies = [...db.movies, movie];
-    db.movies = updatedMovies;
-    setImdbLink('');
-  } catch (error) {
-    console.error('Error fetching movie data:', error);
-  }
-};
+    try {
+      const response = await axios.get(
+        `http://www.omdbapi.com/?apikey=3deebcb6&r=json&i=${extractImdbID(imdbLink)}`
+      );
+      const movie = response.data;
+      onSubmit(movie);
+      setImdbLink('');
+    } catch (error) {
+      console.error('Error fetching movie data:', error);
+    }
+  };
 
   const extractImdbID = (link) => {
     const regex = /tt\d+/;
