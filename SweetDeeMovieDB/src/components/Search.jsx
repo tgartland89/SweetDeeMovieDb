@@ -6,7 +6,8 @@ export default function Search({ onSearch }) {
   const handleInputChange = (event) => {
     setQuery(event.target.value);
   };
-
+  
+  <input type="text" value={query} onChange={handleInputChange} />
   const handleSubmit = (event) => {
     event.preventDefault();
     onSearch(query);

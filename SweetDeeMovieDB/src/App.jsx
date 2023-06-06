@@ -46,45 +46,21 @@ function App() {
     }
   };
   const handleSearch = (query) => {
-    // Implement your search logic here
-    console.log('Search query:', query);
-  };
-
+    const filteredMovies = movies.filter((m) =>
+    m.Title.toLowerCase().includes(query.toLowerCase())
+  );
+  setMovies(filteredMovies);
+};
   return (
-    <Router>
+  <Router>
     <Header onSearch={handleSearch} />
     <Routes>
-      <Route
-  path="/"
-  element={
-    <Home
-      movies={movies}
-      favorites={favorites} // Pass the favorites prop
-      onMovieClick={handleMovieClick}
-      onToggleFavorite={handleToggleFavorite} // Pass the onToggleFavorite prop
-    />
-  }
-/>
-        <Route
-          path="/favorites"
-          element={<Favorites favorites={favorites} />}
-        />
-        <Route
-          path="/addmovie"
-          element={<AddMovie onSubmit={handleAddMovie} />}
-        />
-        <Route
-          path="/movie/:id"
-          element={
-            <MoviePage
-              favorites={favorites}
-              onToggleFavorite={handleToggleFavorite}
-              movie={selectedMovie} // Pass selected movie as prop
-            />
-          }
-        />
-      </Routes>
-    </Router>
+      <Route path="/"element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} />}/>
+      <Route path="/favorites" element={<Favorites favorites={favorites} />}/>
+      <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />}/>
+      <Route path="/movie/:id" element={ <MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />}/>
+    </Routes>
+</Router>
   );
 }
 
