@@ -27,6 +27,9 @@ function App() {
     fetchMovieData();
   }, []);
 
+  const handleAddMovie = (movie) => {
+    setMovies((prevMovies) => [...prevMovies, movie]);
+  };
   const handleToggleFavorite = (movie) => {
     if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
       setFavorites((prevFavorites) => [...prevFavorites, movie]);
@@ -43,10 +46,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home movies={movies} />} />
         <Route path="/favorites" element={<Favorites favorites={favorites} />} />
-        <Route path="/addmovie" element={<AddMovie />} />
-        <Route
-          path="/movie/:id"
-          element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} />}
+        <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
+        <Route path="/movie/:id"element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} />}
         />
       </Routes>
     </Router>

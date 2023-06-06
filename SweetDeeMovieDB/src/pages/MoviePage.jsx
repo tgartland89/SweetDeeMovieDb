@@ -1,4 +1,3 @@
-// MoviePage.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
@@ -41,6 +40,7 @@ export default function MoviePage({ favorites, onToggleFavorite }) {
 
   return (
     <div>
+      <h2>Now Playing:</h2>
       <h1>{movie.Title}</h1>
       <img src={movie.Poster} alt={movie.Title} />
       <p>Year: {movie.Year}</p>
