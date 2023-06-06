@@ -35,6 +35,8 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  display: flex;
+  align-items: center;
 }
 
 button {
@@ -107,16 +109,15 @@ button:focus-visible {
 
 /* Add the following CSS rules */
 .circle {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background-color: gold;
+  background-color: goldenrod;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-left: 1rem; /* Add margin to create space between the text and image */
 }
-
 .circle img {
   max-width: 80%;
   max-height: 80%;
@@ -171,11 +172,15 @@ button:focus-visible {
   margin: 10px;
 }
 .add-movie-image {
-  width: 200px; /* Adjust the width as desired */
-  height: auto;
-  margin-top: 10px; /* Add margin-top for spacing */
+  max-width: 80%;
+  max-height: 80%;
 }
 h1 span {
   display: inline-block;
   margin-right: 10px;
+}
+.movie-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add margin to create space between the circles and the movie list */
 }

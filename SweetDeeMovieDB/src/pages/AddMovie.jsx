@@ -28,7 +28,12 @@ function AddMovie({ onSubmit }) {
 
   return (
     <div>
-      <h1>Add Movie</h1>
+      <h1>
+        <span>Add Movie</span>
+        <div className="circle">
+          <img src={addMovieImage} alt="Add Movie" className="add-movie-image" />
+        </div>
+      </h1>
       <form onSubmit={handleSubmit}>
         <label>
           IMDB Link:
@@ -38,7 +43,6 @@ function AddMovie({ onSubmit }) {
             onChange={(event) => setImdbLink(event.target.value)}
           />
         </label>
-        <img src={addMovieImage} alt="Add Movie" className="add-movie-image" />
         <br />
         <button type="submit">Submit</button>
       </form>
