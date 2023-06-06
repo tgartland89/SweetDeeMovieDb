@@ -11,7 +11,7 @@ function Header({ onSearch }) {
       <nav>
         <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center' }}>
           <li style={{ marginRight: '1rem' }}>
-            <NavLink exact={true} to="/" activeclassname="active">
+            <NavLink exact="true" to="/" activeclassname="active">
               Home
             </NavLink>
           </li>
