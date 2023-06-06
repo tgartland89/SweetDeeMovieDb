@@ -53,7 +53,7 @@ function App() {
       );
       setMovies(filteredMovies);
     } else {
-      fetchMovieData(); // Call the fetchMovieData function here
+      fetchMovieData(); 
     }
   };
 

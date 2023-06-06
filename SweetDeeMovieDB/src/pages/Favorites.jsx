@@ -9,7 +9,7 @@ export default function Favorites({ favorites }) {
         <div className="circle-image">
           <img src={img7766} alt="Circular Image" className="circle-image-img" />
         </div>
-        <h4>🐾 2 Paws Up!</h4>
+        <h4 className="h4-white">🐾 2 Paws Up!</h4>
       </div>
       <div className="poster-container">
         {favorites.map((movie) => (
