@@ -7,20 +7,20 @@ function Header({ onSearch }) {
   const isSearchVisible = location.pathname === '/' || location.pathname === '/favorites';
 
   return (
-    <header>
-      <nav>
-        <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center' }}>
-          <li style={{ marginRight: '1rem' }}>
+    <header className="navbar">
+      <nav className="navbar-nav">
+        <ul className="nav-list">
+          <li className="nav-item">
             <NavLink exact="true" to="/" activeclassname="active">
               Home
             </NavLink>
           </li>
-          <li style={{ marginRight: '1rem' }}>
+          <li className="nav-item">
             <NavLink to="/addmovie" activeclassname="active">
               Add Movie
             </NavLink>
           </li>
-          <li style={{ marginRight: '1rem' }}>
+          <li className="nav-item">
             <NavLink to="/favorites" activeclassname="active">
               Favorites
             </NavLink>

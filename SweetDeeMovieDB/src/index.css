@@ -68,4 +68,114 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* Add the following CSS rules */
+.navbar {
+  background-color: red;
+  padding: 1rem;
+}
 
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.nav-item a {
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: lightgray;
+}
+
+.active {
+  color: lightgray;
+}
+
+/* Add the following CSS rules */
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+}
+
+.circle img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+
+.left-circle {
+  float: left;
+  margin-right: 1rem;
+}
+
+.right-circle {
+  float: right;
+  margin-left: 1rem;
+}
+
+.circle-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.circle-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-image-img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.poster-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie-poster {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+}
+.add-movie-image {
+  width: 200px; /* Adjust the width as desired */
+  height: auto;
+  margin-top: 10px; /* Add margin-top for spacing */
+}
+h1 span {
+  display: inline-block;
+  margin-right: 10px;
+}

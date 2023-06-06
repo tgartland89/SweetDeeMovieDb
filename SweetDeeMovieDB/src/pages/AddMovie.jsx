@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import addMovieImage from '../assets/IMG_5990.jpg';
 
 function AddMovie({ onSubmit }) {
   const [imdbLink, setImdbLink] = useState('');
@@ -37,6 +38,7 @@ function AddMovie({ onSubmit }) {
             onChange={(event) => setImdbLink(event.target.value)}
           />
         </label>
+        <img src={addMovieImage} alt="Add Movie" className="add-movie-image" />
         <br />
         <button type="submit">Submit</button>
       </form>
