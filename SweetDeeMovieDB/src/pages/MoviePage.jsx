@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom';
 
 export default function MoviePage({ favorites, onToggleFavorite }) {
   const { id } = useParams();
-  const [movie, setMovie] = useState(null);
   const [isFavorite, setIsFavorite] = useState(false);
+  const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     const fetchMovieData = async () => {

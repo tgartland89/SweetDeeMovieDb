@@ -10,6 +10,7 @@ import MoviePage from './pages/MoviePage';
 function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
+  const [selectedMovie, setSelectedMovie] = useState(null); // Track selected movie
 
   useEffect(() => {
     const fetchMovieData = async () => {
@@ -29,6 +30,12 @@ function App() {
   const handleAddMovie = (movie) => {
     setMovies((prevMovies) => [...prevMovies, movie]);
   };
+
+  const handleMovieClick = (id) => {
+    const selected = movies.find((movie) => movie.imdbID === id);
+    setSelectedMovie(selected);
+  };
+
   const handleToggleFavorite = (movie) => {
     if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
       setFavorites((prevFavorites) => [...prevFavorites, movie]);
@@ -43,10 +50,27 @@ function App() {
     <Router>
       <Header movies={movies} />
       <Routes>
-        <Route path="/" element={<Home movies={movies} />} />
-        <Route path="/favorites" element={<Favorites favorites={favorites} />} />
-        <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
-        <Route path="/movie/:id"element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} />}
+        <Route
+          path="/"
+          element={<Home movies={movies} onMovieClick={handleMovieClick} />}
+        />
+        <Route
+          path="/favorites"
+          element={<Favorites favorites={favorites} />}
+        />
+        <Route
+          path="/addmovie"
+          element={<AddMovie onSubmit={handleAddMovie} />}
+        />
+        <Route
+          path="/movie/:id"
+          element={
+            <MoviePage
+              favorites={favorites}
+              onToggleFavorite={handleToggleFavorite}
+              movie={selectedMovie} // Pass selected movie as prop
+            />
+          }
         />
       </Routes>
     </Router>
