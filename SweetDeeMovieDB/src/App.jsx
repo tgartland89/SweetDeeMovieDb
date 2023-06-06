@@ -45,11 +45,15 @@ function App() {
       );
     }
   };
+  const handleSearch = (query) => {
+    // Implement your search logic here
+    console.log('Search query:', query);
+  };
 
   return (
     <Router>
-      <Header movies={movies} />
-      <Routes>
+    <Header onSearch={handleSearch} />
+    <Routes>
       <Route
   path="/"
   element={

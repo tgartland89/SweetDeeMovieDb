@@ -1,13 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
+import Search from './Search';
 
-function Header() {
+function Header({ onSearch }) {
+  const location = useLocation();
+  const isSearchVisible = location.pathname === '/' || location.pathname === '/favorites';
+
   return (
     <header>
       <nav>
         <ul style={{ display: 'flex', listStyle: 'none', justifyContent: 'center' }}>
           <li style={{ marginRight: '1rem' }}>
-            <NavLink exact="true" to="/" activeclassname="active">Home</NavLink>
+            <NavLink exact={true} to="/" activeclassname="active">
+              Home
+            </NavLink>
           </li>
           <li style={{ marginRight: '1rem' }}>
             <NavLink to="/addmovie" activeclassname="active">
@@ -21,6 +27,7 @@ function Header() {
           </li>
         </ul>
       </nav>
+      {isSearchVisible && <Search onSearch={onSearch} />}
     </header>
   );
 }
