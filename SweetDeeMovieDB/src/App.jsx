@@ -50,10 +50,17 @@ function App() {
     <Router>
       <Header movies={movies} />
       <Routes>
-        <Route
-          path="/"
-          element={<Home movies={movies} onMovieClick={handleMovieClick} />}
-        />
+      <Route
+  path="/"
+  element={
+    <Home
+      movies={movies}
+      favorites={favorites} // Pass the favorites prop
+      onMovieClick={handleMovieClick}
+      onToggleFavorite={handleToggleFavorite} // Pass the onToggleFavorite prop
+    />
+  }
+/>
         <Route
           path="/favorites"
           element={<Favorites favorites={favorites} />}
