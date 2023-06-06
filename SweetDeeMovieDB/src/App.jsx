@@ -8,6 +8,7 @@ import axios from 'axios';
 import MoviePage from './pages/MoviePage';
 
 
+
 function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
