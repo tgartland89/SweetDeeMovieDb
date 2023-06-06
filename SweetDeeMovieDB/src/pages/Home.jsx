@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function Home({ movies, onMovieClick, onToggleFavorite, favorites }) { // Destructure the favorites prop
+export default function Home({ movies, onMovieClick }) {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
-  };
-
-  const handleFavoriteClick = (movie) => {
-    onToggleFavorite(movie);
   };
 
   return (
@@ -29,11 +25,6 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
               >
                 {movie.Title}
               </Link>
-              <button onClick={() => handleFavoriteClick(movie)}>
-                {favorites.some((fav) => fav.imdbID === movie.imdbID)
-                  ? 'Remove Favorite'
-                  : 'Add Favorite'}
-              </button>
             </li>
           ))}
         </ul>

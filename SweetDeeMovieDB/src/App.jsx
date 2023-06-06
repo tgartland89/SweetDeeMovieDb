@@ -10,7 +10,7 @@ import MoviePage from './pages/MoviePage';
 function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
-  const [selectedMovie, setSelectedMovie] = useState(null); // Track selected movie
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
     const fetchMovieData = async () => {
@@ -20,7 +20,7 @@ function App() {
         );
         setMovies(response.data.Search);
       } catch (error) {
-        console.error('Error fetching movie data:', error);
+        console.error('Error fetchingmovie data:', error);
       }
     };
 
