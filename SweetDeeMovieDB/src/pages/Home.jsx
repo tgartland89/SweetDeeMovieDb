@@ -23,21 +23,27 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
       <div className="circle right-circle">
         <img src={rightCircleImage} alt="Right Circle" />
       </div>
-      <div className="movie-list">
-        <ul>
-          {movies.map((movie) => (
-            <li key={movie.imdbID}>
-              <Link to="#" className="movie-link"onClick={() => {
-                  onMovieClick(movie.imdbID);
-                  handleMovieClick(movie);
-                }}
-              >
-                {movie.Title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </div>
+      <div className="movie-list-container"> 
+        <h2 className="h2-white">Movies</h2> 
+        <div className="movie-list"> 
+          <ul>
+            {movies.map((movie) => (
+              <li key={movie.imdbID}>
+                <Link
+                  to="#"
+                  className="movie-link"
+                  onClick={() => {
+                    onMovieClick(movie.imdbID);
+                    handleMovieClick(movie);
+                  }}
+                >
+                  {movie.Title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div> 
 
       {selectedMovie && (
         <div>

@@ -188,9 +188,9 @@ h1 span {
   margin-right: 10px;
 }
 .movie-list {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 .title,
 .add-movie,
@@ -204,4 +204,19 @@ h1 span {
 
 .h4-white {
   color: white;
+}
+.movie-list-container {
+  background-color: rgb(32, 218, 60);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.movie-link {
+  color: white;
+  text-decoration: none;
+}
+
+.movie-link:hover {
+  color: lightgray;
 }
