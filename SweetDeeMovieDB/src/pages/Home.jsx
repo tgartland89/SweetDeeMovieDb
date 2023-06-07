@@ -1,3 +1,6 @@
+// this represents the home page of a movie database application. 
+// It displays a list of movies and allows users to select a movie, view details, and add/remove it from their favorites.
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import leftCircleImage from '../assets/IMG_0442.jpg';
@@ -44,8 +47,10 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
           </ul>
         </div>
       </div> 
- 
  {selectedMovie && (
+        // this is a conditional rendering block using the {selectedMovie && ...} syntax. 
+        // This block is only rendered if there is a selected movie inside the Now Playing block
+        
         <div>
           <h2 className="h2-white">Now Playing</h2>
           <h1>{selectedMovie.Title}</h1>

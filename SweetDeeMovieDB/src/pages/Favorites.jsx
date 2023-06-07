@@ -1,3 +1,6 @@
+//  represents a page displaying favorite movies. 
+// It includes a title, a circular image, and a grid of movie posters for the favorite movies
+
 import React from 'react';
 import img7766 from '../assets/IMG_7766.jpg';
 
