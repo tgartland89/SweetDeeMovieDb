@@ -77,6 +77,14 @@
       "Type": "movie",
       "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
       "id": 5
+    },
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 6
     }
   ]
 }

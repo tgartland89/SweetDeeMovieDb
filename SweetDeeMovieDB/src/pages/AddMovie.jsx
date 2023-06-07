@@ -37,7 +37,7 @@ function AddMovie({ onSubmit }) {
   return (
     <div className="add-movie-container">
       <h1>
-        <span>Add Movie</span>
+        <span>Share your Suggestions from IMDB!</span>
         <div className="circle">
           <img src={addMovieImage} alt="Add Movie" className="add-movie-image" />
         </div>
