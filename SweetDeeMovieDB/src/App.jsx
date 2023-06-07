@@ -4,6 +4,11 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import AddMovie from './pages/AddMovie';
+
+// Axios was something new to me and is used to communicate with the backend and it also supports the Promise API that is native to JS ES6. 
+// It is a library which is used to make requests to an API, return data from the API, 
+// and then do things with that data in our React application.- researched through Google, Wikipedia, and ChatGpt 
+
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
 
@@ -29,6 +34,21 @@ function App() {
 
   const handleAddMovie = (movie) => {
     setMovies((prevMovies) => [...prevMovies, movie]);
+    const newMovieObj = {
+      "title": movie.Title,
+      "Poster": movie.Poster,
+      "year": movie.Year,
+    }
+    console.log(newMovieObj)
+    fetch ("http://localhost:3000/movies" ,{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(movie)
+      
+    })
+  
   };
 
   const handleMovieClick = (id) => {
