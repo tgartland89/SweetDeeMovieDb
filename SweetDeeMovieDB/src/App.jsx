@@ -92,26 +92,34 @@ function App() {
   // It also sends a request to the backend server to save the favorite status of the movie.
   
   const handleToggleFavorite = async (movie) => {
+    let updatedFavorites;
+  
     if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
-      setFavorites((prevFavorites) => [...prevFavorites, movie]);
+      updatedFavorites = [...favorites, movie];
     } else {
-      setFavorites((prevFavorites) =>
-        prevFavorites.filter((fav) => fav.imdbID !== movie.imdbID)
-      );
+      updatedFavorites = favorites.filter((fav) => fav.imdbID !== movie.imdbID);
     }
   
     try {
-      const response = await axios.post('http://localhost:3000/favorites',movie);
-      console.log('Movie favorite status saved on the backend:', response.data);
+      await axios.post('http://localhost:3000/favorites', updatedFavorites);
+      console.log('Movie favorite status saved on the backend.');
+  
+      setFavorites(updatedFavorites);
+      localStorage.setItem('favorites', JSON.stringify(updatedFavorites)); // Add this line
     } catch (error) {
       console.error('Error saving movie favorite status on the backend:', error);
     }
   };
-
-  // another useEffect hook to update the local storage whenever the favorites state changes.
+  
   useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-  }, [favorites]);
+    const storedFavorites = localStorage.getItem('favorites');
+  
+    if (storedFavorites) {
+      setFavorites(JSON.parse(storedFavorites));
+    } else {
+      setFavorites([]);
+    }
+  }, []);
 
   // filters the movies based on a search query.
   //  If a query is provided, it filters the movies by their title; otherwise, it fetches all the movie data again.
