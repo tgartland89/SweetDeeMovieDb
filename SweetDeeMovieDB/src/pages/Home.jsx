@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import leftCircleImage from '../assets/IMG_0442.jpg';
 import rightCircleImage from '../assets/IMG_7301.jpg';
 
-
-
 export default function Home({ movies, onMovieClick, onToggleFavorite, favorites }) {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
@@ -29,10 +27,7 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
         <ul>
           {movies.map((movie) => (
             <li key={movie.imdbID}>
-              <Link
-                to="#"
-                className="movie-link"
-                onClick={() => {
+              <Link to="#" className="movie-link"onClick={() => {
                   onMovieClick(movie.imdbID);
                   handleMovieClick(movie);
                 }}
@@ -46,10 +41,10 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
 
       {selectedMovie && (
         <div>
-          <h2>Now Playing</h2>
+          <h2 className="h2-white">Now Playing</h2>
           <h1>{selectedMovie.Title}</h1>
           <img src={selectedMovie.Poster} alt={selectedMovie.Title} />
-          <p>Year: {selectedMovie.Year}</p>
+          <p className="p-white">Year: {selectedMovie.Year}</p>
           <button onClick={() => handleFavoriteClick(selectedMovie)}>
             {favorites.some((fav) => fav.imdbID === selectedMovie.imdbID)
               ? 'Remove Favorite'

@@ -63,23 +63,10 @@ function App() {
         <Header onSearch={handleSearch} />
         <div className="content">
           <Routes>
-            <Route
-              path="/"
-              element={
-                <Home
-                  movies={movies}
-                  favorites={favorites}
-                  onMovieClick={handleMovieClick}
-                  onToggleFavorite={handleToggleFavorite}
-                />
-              }
-            />
+            <Route path="/" element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite}/>}/>
             <Route path="/favorites" element={<Favorites favorites={favorites} />} />
             <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
-            <Route
-              path="/movie/:id"
-              element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />}
-            />
+            <Route path="/movie/:id" element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />}/>
           </Routes>
         </div>
       </div>

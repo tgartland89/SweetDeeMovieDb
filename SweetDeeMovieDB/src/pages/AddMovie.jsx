@@ -1,5 +1,8 @@
+// component allows users to enter an IMDB link, fetches movie data from the OMDB API, 
+// and calls a provided function (onSubmit) with the retrieved movie data when the form is submitted.
+
 import React, { useState } from 'react';
-import axios from 'axios';
+import axios from 'axios'; 
 import addMovieImage from '../assets/IMG_5990.jpg';
 
 function AddMovie({ onSubmit }) {
@@ -9,7 +12,8 @@ function AddMovie({ onSubmit }) {
     event.preventDefault();
 
     try {
-      const response = await axios.get(
+      // this is my GET reuesting from axios to my API, OMDB with an imdb link 
+      const response = await axios.get(   
         `http://www.omdbapi.com/?apikey=3deebcb6&r=json&i=${extractImdbID(imdbLink)}`
       );
       const movie = response.data;
@@ -20,6 +24,9 @@ function AddMovie({ onSubmit }) {
     }
   };
 
+  // The extractImdbID function is a helper function that extracts the IMDB ID from the provided IMDB link. 
+  // It uses a regular expression (/tt\d+/) to match the IMDB ID pattern (tt followed by digits).
+  
   const extractImdbID = (link) => {
     const regex = /tt\d+/;
     const match = link.match(regex);
