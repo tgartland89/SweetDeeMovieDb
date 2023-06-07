@@ -1,4 +1,4 @@
-// component allows users to enter an IMDB link, fetches movie data from the OMDB API, 
+// This component allows users to enter an IMDB link, fetches movie data from the OMDB API, 
 // and calls a provided function (onSubmit) with the retrieved movie data when the form is submitted.
 
 import React, { useState } from 'react';
@@ -26,6 +26,7 @@ function AddMovie({ onSubmit }) {
 
   // The extractImdbID function is a helper function that extracts the IMDB ID from the provided IMDB link. 
   // It uses a regular expression (/tt\d+/) to match the IMDB ID pattern (tt followed by digits).
+  // - researched through Google and ChatGpt 
   
   const extractImdbID = (link) => {
     const regex = /tt\d+/;
@@ -42,12 +43,9 @@ function AddMovie({ onSubmit }) {
         </div>
       </h1>
       <form onSubmit={handleSubmit}>
-      <label className="label-white">
-  IMDB Link:
-  <input
-    type="text"
-    value={imdbLink}
-    onChange={(event) => setImdbLink(event.target.value)}
+      <label className="label-white">IMDB Link:<input type="text"
+        value={imdbLink}
+        onChange={(event) => setImdbLink(event.target.value)}
   />
 </label>
         <br />

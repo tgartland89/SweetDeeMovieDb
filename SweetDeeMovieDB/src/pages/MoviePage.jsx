@@ -1,3 +1,7 @@
+// this code creates a page that shows information about a movie. 
+// If the movie is provided, it shows the movie title, poster image, and year. 
+// It also has a button that can be clicked to add or remove the movie from a list of favorite movies.
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
