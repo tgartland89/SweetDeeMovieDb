@@ -1,3 +1,9 @@
+// this code is for a React application that uses the React Router library to manage different pages or routes within the application. 
+// It also uses the Axios library to make requests to an API and retrieve movie data.
+
+// this code sets up a React application that fetches movie data from an API, allows users to add movies to a list, 
+// view movie details, mark movies as favorites, and perform searches. It uses React Router for page navigation and Axios for API communication.
+
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
@@ -11,6 +17,11 @@ import AddMovie from './pages/AddMovie';
 
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
+
+// here inside the App function I am delcaring stae vaiables with uwsState hooks for movies, favorites, and selectedMovie
+// this is an async function retrieving moviedata from my API using Axios
+// It checks if the movie data is already stored in the local storage of the browser and if not, 
+// it makes a request to the API to fetch the data. It also retrieves the favorites from the local storage.
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -39,10 +50,14 @@ function App() {
     }
   };
 
+  // this hook calls fetchMovieData when the components load the first time 
   useEffect(() => {
     fetchMovieData();
   }, []);
 
+  //  this function adds a movie to the list of movies. 
+  // It also sends a request to the backend server to save the movie data and updates the local storage accordingly.
+  
   const handleAddMovie = async (movie) => {
     setMovies((prevMovies) => [...prevMovies, movie]);
 
@@ -63,11 +78,16 @@ function App() {
     }
   };
 
+  //  sets the selected movie when a movie is clicked.
+  
   const handleMovieClick = (id) => {
     const selected = movies.find((movie) => movie.imdbID === id);
     setSelectedMovie(selected);
   };
 
+  // adds or removes a movie from the favorites list. 
+  // It also sends a request to the backend server to save the favorite status of the movie.
+  
   const handleToggleFavorite = async (movie) => {
     if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
       setFavorites((prevFavorites) => [...prevFavorites, movie]);
@@ -85,10 +105,14 @@ function App() {
     }
   };
 
+  // another useEffect hook to update the local storage whenever the favorites state changes.
   useEffect(() => {
     localStorage.setItem('favorites', JSON.stringify(favorites));
   }, [favorites]);
 
+  // filters the movies based on a search query.
+  //  If a query is provided, it filters the movies by their title; otherwise, it fetches all the movie data again.
+  
   const handleSearch = (query) => {
     if (query) {
       const filteredMovies = movies.filter((m) =>
@@ -101,8 +125,14 @@ function App() {
   };
   
  return (
+
+  // This returns JSX code that sets up the routing for different pages using the Router, Routes, and Route 
+  // components from React Router. Each route is associated with a specific component and passes the required props to them.
     <Router>
       <div className="App">
+        
+        {/*  added the Headeer component, which displays a header section at the top of the page, and a content section where the different pages are rendered based on 
+        the current route. */}
         <Header onSearch={handleSearch} />
         <div className="content">
           <Routes>
