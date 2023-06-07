@@ -35,17 +35,17 @@ function App() {
   const handleAddMovie = (movie) => {
     setMovies((prevMovies) => [...prevMovies, movie]);
     const newMovieObj = {
-      "title": movie.Title,
-      "Poster": movie.Poster,
-      "year": movie.Year,
-    }
+      title: movie.Title,
+      poster: movie.Poster,
+      year: movie.Year,
+    };
     console.log(newMovieObj)
     fetch ("http://localhost:3000/movies" ,{
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(movie)
+      body: JSON.stringify(newMovieObj)
       
     })
   
