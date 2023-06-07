@@ -47,8 +47,10 @@ h1 {
   display: flex;
   align-items: center;
   color: white;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: underline;
 }
-
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -220,3 +222,17 @@ h1 span {
 .movie-link:hover {
   color: lightgray;
 }
+
+.add-movie-container {
+  background-color: rgb(32, 218, 60);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.circle-image-container {
+  background-color: rgb(32, 218, 60);
+  padding: 10px;
+  border-radius: 8px;
+}
+
