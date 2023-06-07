@@ -44,12 +44,14 @@ function App() {
       const storedFavorites = localStorage.getItem('favorites');
       if (storedFavorites) {
         setFavorites(JSON.parse(storedFavorites));
+      } else {
+        // Set favorites to an empty array if not found in local storage
+        setFavorites([]);
       }
     } catch (error) {
       console.error('Error fetching movie data:', error);
     }
   };
-
   // this hook calls fetchMovieData when the components load the first time 
   useEffect(() => {
     fetchMovieData();
@@ -59,20 +61,21 @@ function App() {
   // It also sends a request to the backend server to save the movie data and updates the local storage accordingly.
   
   const handleAddMovie = async (movie) => {
-    setMovies((prevMovies) => [...prevMovies, movie]);
-
+    const newMovieList = [...movies, movie];
+    setMovies(newMovieList);
+  
     const newMovieObj = {
       id: movie.imdbID,
       title: movie.Title,
       poster: movie.Poster,
       year: movie.Year
     };
-
+  
     try {
       const response = await axios.post('http://localhost:3000/movies', newMovieObj);
       console.log('Movie saved on the backend:', response.data);
-
-      localStorage.setItem('movies', JSON.stringify([...movies, movie]));
+  
+      localStorage.setItem('movies', JSON.stringify(newMovieList));
     } catch (error) {
       console.error('Error saving movie on the backend:', error);
     }
