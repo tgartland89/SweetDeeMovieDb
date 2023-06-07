@@ -32,7 +32,6 @@ function App() {
       console.error('Error fetching movie data:', error);
     }
   };
-
   useEffect(() => {
     fetchMovieData();
   }, []);
@@ -60,6 +59,7 @@ function App() {
   };
 
   const handleToggleFavorite = (movie) => {
+    
     if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
       setFavorites((prevFavorites) => [...prevFavorites, movie]);
     } else {
