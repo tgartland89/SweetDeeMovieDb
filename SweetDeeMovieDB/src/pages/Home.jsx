@@ -44,8 +44,8 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
           </ul>
         </div>
       </div> 
-
-      {selectedMovie && (
+ 
+ {selectedMovie && (
         <div>
           <h2 className="h2-white">Now Playing</h2>
           <h1>{selectedMovie.Title}</h1>

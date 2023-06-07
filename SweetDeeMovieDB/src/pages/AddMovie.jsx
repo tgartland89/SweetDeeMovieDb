@@ -43,12 +43,11 @@ function AddMovie({ onSubmit }) {
         </div>
       </h1>
       <form onSubmit={handleSubmit}>
-      <label className="label-white">IMDB Link:<input type="text"
-        value={imdbLink}
-        onChange={(event) => setImdbLink(event.target.value)}
-  />
-</label>
-        <br />
+          <label className="label-white">IMDB Link:<input type="text"
+              value={imdbLink}
+              onChange={(event) => setImdbLink(event.target.value)}/>
+          </label>
+    <br/>
         <button type="submit">Submit</button>
       </form>
     </div>

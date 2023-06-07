@@ -22,14 +22,15 @@ function App() {
       if (storedMovies) {
         setMovies(JSON.parse(storedMovies));
       } 
-      const response = await axios.get(
-        'http://www.omdbapi.com/?apikey=3deebcb6&s=dog&type=movie&plot=short&page=1&r=json'
-      );
-      const newMovies = response.data.Search;
-      setMovies(newMovies);
-      localStorage.setItem('movies', JSON.stringify(newMovies));
+      else {
+        const response = await axios.get(
+          'http://www.omdbapi.com/?apikey=3deebcb6&s=dog&type=movie&plot=short&page=1&r=json'
+        );
+        setMovies(response.data.Search);
+        localStorage.setItem('movies', JSON.stringify(response.data.Search));
+      }
     } catch (error) {
-      console.error('Error fetching movie data:', error)
+      console.error('Error fetching movie data:', error);
     }
   };
 
@@ -85,16 +86,10 @@ function App() {
         <Header onSearch={handleSearch} />
         <div className="content">
           <Routes>
-            <Route
-              path="/"
-              element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} />}
-            />
+            <Route path="/"element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} />}/>
             <Route path="/favorites" element={<Favorites favorites={favorites} />} />
             <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
-            <Route
-              path="/movie/:id"
-              element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />}
-            />
+            <Route path="/movie/:id" element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />} />
           </Routes>
         </div>
       </div>
