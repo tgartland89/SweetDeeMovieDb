@@ -12,7 +12,7 @@ function AddMovie({ onSubmit }) {
     event.preventDefault();
 
     try {
-      // this is my GET reuesting from axios to my API, OMDB with an imdb link 
+      // this is a GET reuesting from axios to my API, OMDB with an imdb link 
       const response = await axios.get(   
         `http://www.omdbapi.com/?apikey=3deebcb6&r=json&i=${extractImdbID(imdbLink)}`
       );
