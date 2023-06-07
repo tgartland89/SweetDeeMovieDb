@@ -15,19 +15,18 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
-
   const fetchMovieData = async () => {
     try {
       const storedMovies = localStorage.getItem('movies');
       if (storedMovies) {
         setMovies(JSON.parse(storedMovies));
-      } 
-      else {
+      } else {
         const response = await axios.get(
           'http://www.omdbapi.com/?apikey=3deebcb6&s=dog&type=movie&plot=short&page=1&r=json'
         );
-        setMovies(response.data.Search);
-        localStorage.setItem('movies', JSON.stringify(response.data.Search));
+        const fetchedMovies = response.data.Search;
+        setMovies(fetchedMovies);
+        localStorage.setItem('movies', JSON.stringify(fetchedMovies));
       }
     } catch (error) {
       console.error('Error fetching movie data:', error);
@@ -49,6 +48,7 @@ function App() {
     try {
       const response = await axios.post('http://localhost:3000/movies', newMovieObj);
       console.log('Movie saved on the backend:', response.data);
+      localStorage.setItem('movies', JSON.stringify([...movies, movie]));
     } catch (error) {
       console.error('Error saving movie on the backend:', error);
     }
