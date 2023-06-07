@@ -11,10 +11,12 @@ import AddMovie from './pages/AddMovie';
 
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
+
 function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
+  
   const fetchMovieData = async () => {
     try {
       const storedMovies = localStorage.getItem('movies');
@@ -28,25 +30,33 @@ function App() {
         setMovies(fetchedMovies);
         localStorage.setItem('movies', JSON.stringify(fetchedMovies));
       }
+      const storedFavorites = localStorage.getItem('favorites');
+      if (storedFavorites) {
+        setFavorites(JSON.parse(storedFavorites));
+      }
     } catch (error) {
       console.error('Error fetching movie data:', error);
     }
   };
+
   useEffect(() => {
     fetchMovieData();
   }, []);
 
   const handleAddMovie = async (movie) => {
     setMovies((prevMovies) => [...prevMovies, movie]);
+
     const newMovieObj = {
+      id: movie.imdbID,
       title: movie.Title,
       poster: movie.Poster,
-      year: movie.Year,
+      year: movie.Year
     };
-    console.log(newMovieObj);
+
     try {
       const response = await axios.post('http://localhost:3000/movies', newMovieObj);
       console.log('Movie saved on the backend:', response.data);
+
       localStorage.setItem('movies', JSON.stringify([...movies, movie]));
     } catch (error) {
       console.error('Error saving movie on the backend:', error);
@@ -58,8 +68,7 @@ function App() {
     setSelectedMovie(selected);
   };
 
-  const handleToggleFavorite = (movie) => {
-    
+  const handleToggleFavorite = async (movie) => {
     if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
       setFavorites((prevFavorites) => [...prevFavorites, movie]);
     } else {
@@ -67,7 +76,18 @@ function App() {
         prevFavorites.filter((fav) => fav.imdbID !== movie.imdbID)
       );
     }
+  
+    try {
+      const response = await axios.post('http://localhost:3000/favorites',movie);
+      console.log('Movie favorite status saved on the backend:', response.data);
+    } catch (error) {
+      console.error('Error saving movie favorite status on the backend:', error);
+    }
   };
+
+  useEffect(() => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }, [favorites]);
 
   const handleSearch = (query) => {
     if (query) {
@@ -79,8 +99,8 @@ function App() {
       fetchMovieData(); 
     }
   };
-
-  return (
+  
+ return (
     <Router>
       <div className="App">
         <Header onSearch={handleSearch} />
