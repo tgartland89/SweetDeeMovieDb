@@ -152,15 +152,14 @@ button:focus-visible {
 }
 
 .circle-image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  object-fit: cover;
-  margin-right: 10px;
   background-color: goldenrod;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: 1rem; 
 }
 
 .circle-image-img {
@@ -206,6 +205,7 @@ h1 span {
 
 .h4-white {
   color: white;
+  font-size: 24px; 
 }
 .movie-list-container {
   background-color: rgb(32, 218, 60);
