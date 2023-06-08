@@ -104,7 +104,7 @@ function App() {
       console.log('Movie favorite status saved on the backend.');
   
       setFavorites(updatedFavorites);
-      localStorage.setItem('favorites', JSON.stringify(updatedFavorites)); // Add this line
+      localStorage.setItem('favorites', JSON.stringify(updatedFavorites)); 
     } catch (error) {
       console.error('Error saving movie favorite status on the backend:', error);
     }
