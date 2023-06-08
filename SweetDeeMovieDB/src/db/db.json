@@ -29,6 +29,24 @@
       "poster": "https://m.media-amazon.com/images/M/MV5BMzQxODE4MzEyNF5BMl5BanBnXkFtZTgwNjk2OTY4ODE@._V1_SX300.jpg",
       "year": "1997",
       "id": 5
+    },
+    {
+      "id": "tt0107131",
+      "title": "Homeward Bound: The Incredible Journey",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "year": "1993"
+    },
+    {
+      "id": "tt0068112",
+      "title": "The New Scooby-Doo Movies",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWEwYTZhMGQtMDU0ZC00NmYyLTk0OWEtMjg1OTY5OTY5N2EyXkEyXkFqcGdeQXVyMTEzNjA2NzM@._V1_SX300.jpg",
+      "year": "1972–1973"
+    },
+    {
+      "id": "tt1379182",
+      "title": "Dogtooth",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIyOTkyMDE5N15BMl5BanBnXkFtZTcwNjIwNzQwMw@@._V1_SX300.jpg",
+      "year": "2009"
     }
   ],
   "favorites": [
@@ -103,6 +121,270 @@
         "Type": "movie",
         "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
       }
-    ]
+    ],
+    [
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Homeward Bound: The Incredible Journey",
+        "Year": "1993",
+        "Rated": "G",
+        "Released": "12 Feb 1993",
+        "Runtime": "84 min",
+        "Genre": "Adventure, Comedy, Drama",
+        "Director": "Duwayne Dunham",
+        "Writer": "Sheila Burnford, Caroline Thompson, Linda Woolverton",
+        "Actors": "Michael J. Fox, Sally Field, Don Alder",
+        "Plot": "A fun-loving American bulldog pup, a hilarious Himalayan cat, and a wise old golden retriever embark on a long trek through the rugged wilderness of the Sierra Nevada mountains in a quest to reach home and their beloved owners.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.9/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "87%"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "48,652",
+        "imdbID": "tt0107131",
+        "Type": "movie",
+        "DVD": "03 Sep 2002",
+        "BoxOffice": "$41,833,324",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
+    ],
+    [
+      {
+        "Title": "Homeward Bound: The Incredible Journey",
+        "Year": "1993",
+        "Rated": "G",
+        "Released": "12 Feb 1993",
+        "Runtime": "84 min",
+        "Genre": "Adventure, Comedy, Drama",
+        "Director": "Duwayne Dunham",
+        "Writer": "Sheila Burnford, Caroline Thompson, Linda Woolverton",
+        "Actors": "Michael J. Fox, Sally Field, Don Alder",
+        "Plot": "A fun-loving American bulldog pup, a hilarious Himalayan cat, and a wise old golden retriever embark on a long trek through the rugged wilderness of the Sierra Nevada mountains in a quest to reach home and their beloved owners.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.9/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "87%"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "48,652",
+        "imdbID": "tt0107131",
+        "Type": "movie",
+        "DVD": "03 Sep 2002",
+        "BoxOffice": "$41,833,324",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
+    ],
+    [
+      {
+        "Title": "Homeward Bound: The Incredible Journey",
+        "Year": "1993",
+        "Rated": "G",
+        "Released": "12 Feb 1993",
+        "Runtime": "84 min",
+        "Genre": "Adventure, Comedy, Drama",
+        "Director": "Duwayne Dunham",
+        "Writer": "Sheila Burnford, Caroline Thompson, Linda Woolverton",
+        "Actors": "Michael J. Fox, Sally Field, Don Alder",
+        "Plot": "A fun-loving American bulldog pup, a hilarious Himalayan cat, and a wise old golden retriever embark on a long trek through the rugged wilderness of the Sierra Nevada mountains in a quest to reach home and their beloved owners.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.9/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "87%"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "48,652",
+        "imdbID": "tt0107131",
+        "Type": "movie",
+        "DVD": "03 Sep 2002",
+        "BoxOffice": "$41,833,324",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
+    ],
+    [
+      {
+        "Title": "Homeward Bound: The Incredible Journey",
+        "Year": "1993",
+        "Rated": "G",
+        "Released": "12 Feb 1993",
+        "Runtime": "84 min",
+        "Genre": "Adventure, Comedy, Drama",
+        "Director": "Duwayne Dunham",
+        "Writer": "Sheila Burnford, Caroline Thompson, Linda Woolverton",
+        "Actors": "Michael J. Fox, Sally Field, Don Alder",
+        "Plot": "A fun-loving American bulldog pup, a hilarious Himalayan cat, and a wise old golden retriever embark on a long trek through the rugged wilderness of the Sierra Nevada mountains in a quest to reach home and their beloved owners.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.9/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "87%"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "48,652",
+        "imdbID": "tt0107131",
+        "Type": "movie",
+        "DVD": "03 Sep 2002",
+        "BoxOffice": "$41,833,324",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "Homeward Bound: The Incredible Journey",
+        "Year": "1993",
+        "Rated": "G",
+        "Released": "12 Feb 1993",
+        "Runtime": "84 min",
+        "Genre": "Adventure, Comedy, Drama",
+        "Director": "Duwayne Dunham",
+        "Writer": "Sheila Burnford, Caroline Thompson, Linda Woolverton",
+        "Actors": "Michael J. Fox, Sally Field, Don Alder",
+        "Plot": "A fun-loving American bulldog pup, a hilarious Himalayan cat, and a wise old golden retriever embark on a long trek through the rugged wilderness of the Sierra Nevada mountains in a quest to reach home and their beloved owners.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.9/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "87%"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "48,652",
+        "imdbID": "tt0107131",
+        "Type": "movie",
+        "DVD": "03 Sep 2002",
+        "BoxOffice": "$41,833,324",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Alpha Dog",
+        "Year": "2006",
+        "imdbID": "tt0426883",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjExODMyNzQzMl5BMl5BanBnXkFtZTYwNzMwNTg3._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Alpha Dog",
+        "Year": "2006",
+        "imdbID": "tt0426883",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjExODMyNzQzMl5BMl5BanBnXkFtZTYwNzMwNTg3._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "Alpha Dog",
+        "Year": "2006",
+        "imdbID": "tt0426883",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMjExODMyNzQzMl5BMl5BanBnXkFtZTYwNzMwNTg3._V1_SX300.jpg"
+      }
+    ],
+    [],
+    [
+      {
+        "Title": "Mad Dog and Glory",
+        "Year": "1993",
+        "imdbID": "tt0107473",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYWViMGIzMzktNDhjYS00ZjVhLWFjOWQtMjVlMmRhZjI5ZDlkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
+      }
+    ],
+    [],
+    [
+      {
+        "Title": "Mad Dog and Glory",
+        "Year": "1993",
+        "imdbID": "tt0107473",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BYWViMGIzMzktNDhjYS00ZjVhLWFjOWQtMjVlMmRhZjI5ZDlkXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_SX300.jpg"
+      }
+    ],
+    []
   ]
 }

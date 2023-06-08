@@ -1,6 +1,10 @@
 // this code is for a React application that uses the React Router library to manage different pages or routes within the application. 
 // It also uses the Axios library to make requests to an API and retrieve movie data.
 
+// Axios was something new to me and is used to communicate with the backend and it also supports the Promise API that is native to JS ES6. 
+// It is a library which is used to make requests to an API, return data from the API, 
+// and then do things with that data in our React application.- researched through Google, Wikipedia, and ChatGpt 
+
 // this code sets up a React application that fetches movie data from an API, allows users to add movies to a list, 
 // view movie details, mark movies as favorites, and perform searches. It uses React Router for page navigation and Axios for API communication.
 
@@ -10,11 +14,6 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Favorites from './pages/Favorites';
 import AddMovie from './pages/AddMovie';
-
-// Axios was something new to me and is used to communicate with the backend and it also supports the Promise API that is native to JS ES6. 
-// It is a library which is used to make requests to an API, return data from the API, 
-// and then do things with that data in our React application.- researched through Google, Wikipedia, and ChatGpt 
-
 import axios from 'axios';
 import MoviePage from './pages/MoviePage';
 
