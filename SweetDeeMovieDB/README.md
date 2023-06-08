@@ -2,7 +2,7 @@
 
 Phase-2 Project- DEN-SE-05123 cohort 
 
-Sweet Dee's Movie Db is a React application that collects movie details from the Open Movie database API. It then creates a list of 10 movies on the home page to start as suggestions to my dog, Sweet Dee ("She is quite the cinephile). 
+Sweet Dee's Movie Db is a React application that collects movie details from the Open Movie database API. It then creates a list of 10 movies on the home page to start as suggestions to my dog, Sweet Dee (She is quite the cinephile). 
 
 From the Home page,  she can navigate from the NavBar atop the page to either the "Add a Movie" or "Favorites" page. I also put in a Search/Filter feature that can filter the list of movies depending on the title. 
 
