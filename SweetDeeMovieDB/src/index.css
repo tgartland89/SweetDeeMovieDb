@@ -242,3 +242,19 @@ h1 span {
   padding: 10px;
   border-radius: 8px;
 }
+.button-row {
+  display: flex;
+  gap: 10px; /* Add space between buttons */
+  margin-top: 10px; /* Add margin between buttons and movie links */
+}
+
+.favorite-button,
+.delete-button {
+  padding: 5px 10px; /* Adjust padding to make the buttons smaller */
+  font-size: 14px; /* Adjust font-size to make the buttons smaller */
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}

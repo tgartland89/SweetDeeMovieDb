@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import leftCircleImage from '../assets/IMG_0442.jpg';
 import rightCircleImage from '../assets/IMG_7301.jpg';
 
-export default function Home({ movies, favorites, onMovieClick, onToggleFavorite }) {
+export default function Home({ movies, favorites, onMovieClick, onToggleFavorite, onDeleteMovie }) {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleMovieClick = (movie) => {
@@ -32,23 +32,26 @@ export default function Home({ movies, favorites, onMovieClick, onToggleFavorite
       <div className="movie-list-container">
         <h2 className="h2-white">Movies</h2>
         <div className="movie-list">
-  <ul>
-  {sortedMovies.map((movie) => (
-  <li key={movie.imdbID}>
-    <Link
-      to="#"
-      className="movie-link"
-      onClick={() => {
-        onMovieClick(movie.imdbID);
-        handleMovieClick(movie);
-      }}
-    >
-      {movie.Title}
-    </Link>
-  </li>
-))}
-  </ul>
-</div>
+        <ul>
+          {sortedMovies.map((movie) => (
+            <li key={movie.imdbID}>
+              <Link
+                to="#"
+                className="movie-link"
+                onClick={() => {
+                  onMovieClick(movie);
+                  handleMovieClick(movie);
+                }}
+              >
+                {movie.Title}
+              </Link>
+              <button onClick={() => onDeleteMovie(movie)} className="delete-button">
+              Delete
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
       </div>
       {selectedMovie && (
         <div>

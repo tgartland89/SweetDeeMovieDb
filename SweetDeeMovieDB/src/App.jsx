@@ -27,6 +27,7 @@ function App() {
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [selectedMovie, setSelectedMovie] = useState(null);
+  const [deletedMovies, setDeletedMovies] = useState([]);
   
   const fetchMovieData = async () => {
     try {
@@ -126,6 +127,14 @@ const handleRemoveFavorite = (movie) => {
     }
   }, []);
 
+  const handleDeleteMovie = (movie) => {
+    const updatedMovies = movies.filter((m) => m.imdbID !== movie.imdbID);
+    setMovies(updatedMovies);
+    setDeletedMovies([...deletedMovies, movie]);
+    localStorage.setItem('movies', JSON.stringify(updatedMovies));
+    localStorage.setItem('deletedMovies', JSON.stringify([...deletedMovies, movie]));
+  };
+
   // filters the movies based on a search query.
   //  If a query is provided, it filters the movies by their title; otherwise, it fetches all the movie data again.
   
@@ -152,7 +161,7 @@ const handleRemoveFavorite = (movie) => {
         <Header onSearch={handleSearch} />
         <div className="content">
           <Routes>
-            <Route path="/"element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} />}/>
+            <Route path="/"element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} onDeleteMovie={handleDeleteMovie} />}/>
             <Route path="/favorites" element={<Favorites favorites={favorites} onRemoveFavorite={handleRemoveFavorite} />} />
             <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
             <Route path="/movie/:id" element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />} />
