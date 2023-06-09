@@ -21,7 +21,7 @@ export default function Home({ movies, favorites, onMovieClick, onToggleFavorite
   const sortedMovies = movies.slice().sort((a, b) => a.Title.localeCompare(b.Title));
 
   return (
-    <div>
+    <div className="home-page-container">
       <div className="circle left-circle">
         <img src={leftCircleImage} alt="Left Circle" />
       </div>
@@ -29,44 +29,42 @@ export default function Home({ movies, favorites, onMovieClick, onToggleFavorite
       <div className="circle right-circle">
         <img src={rightCircleImage} alt="Right Circle" />
       </div>
-      <div className="movie-list-container">
-        <h2 className="h2-white">Movies</h2>
-        <div className="movie-list">
-        <ul>
-          {sortedMovies.map((movie) => (
-            <li key={movie.imdbID}>
-              <Link
-                to="#"
-                className="movie-link"
-                onClick={() => {
-                  onMovieClick(movie);
-                  handleMovieClick(movie);
-                }}
-              >
-                {movie.Title}
-              </Link>
-              {' '}
-              <button onClick={() => onDeleteMovie(movie)} className="delete-button"> 
-              Delete
-              </button>
-            </li>
-          ))}
-        </ul>
-      </div>
-      </div>
-      {selectedMovie && (
-        <div>
-          <h2 className="h2-white">Now Playing</h2>
-          <h1>{selectedMovie.Title}</h1>
-          <img src={selectedMovie.Poster} alt={selectedMovie.Title} />
-          <p className="p-white">Year: {selectedMovie.Year}</p>
-          <button onClick={() => handleFavoriteClick(selectedMovie)}>
-            {favorites.some((fav) => fav.imdbID === selectedMovie.imdbID)
-              ? 'Remove Favorite'
-              : 'Add Favorite'}
-          </button>
+      <div className="content-container">
+        <div className="movie-list-container">
+          <h2 className="h2-white">Movies</h2>
+          <div className="movie-list">
+            <ul>
+              {sortedMovies.map((movie) => (
+                <li key={movie.imdbID}>
+                  <Link
+                    to="#"
+                    className="movie-link"
+                    onClick={() => {
+                      onMovieClick(movie);
+                      handleMovieClick(movie);
+                    }}
+                  >
+                    {movie.Title}
+                  </Link>
+                  {' '}
+                  <button onClick={() => onDeleteMovie(movie)} className="delete-button">Delete</button>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-      )}
+        {selectedMovie && (
+          <div className="movie-details-container">
+            <h2 className="h2-white">Now Playing</h2>
+            <h1>{selectedMovie.Title}</h1>
+            <img src={selectedMovie.Poster} alt={selectedMovie.Title} />
+            <p className="p-white">Year: {selectedMovie.Year}</p>
+            <button onClick={() => handleFavoriteClick(selectedMovie)}>
+              {favorites.some((fav) => fav.imdbID === selectedMovie.imdbID) ? 'Remove Favorite' : 'Add Favorite'}
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 }

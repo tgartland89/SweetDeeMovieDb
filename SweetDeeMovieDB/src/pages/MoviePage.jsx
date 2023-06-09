@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 export default function MoviePage({ movie, favorites, onToggleFavorite, onRemoveFavorite, onDeleteMovie }) {
   const [isDeleted, setIsDeleted] = useState(false);
-  
+
   const handleFavoriteClick = () => {
     if (favorites.some((fav) => fav.imdbID === movie.imdbID)) {
       onRemoveFavorite(movie);
@@ -22,7 +22,7 @@ export default function MoviePage({ movie, favorites, onToggleFavorite, onRemove
   };
 
   return (
-    <div>
+    <div className="movie-page-container">
       <h1>Sweet Dee's Movie dB</h1>
       {movie && (
         <div>
@@ -31,13 +31,13 @@ export default function MoviePage({ movie, favorites, onToggleFavorite, onRemove
           <img src={movie.Poster} alt={movie.Title} />
           <p>Year: {movie.Year}</p>
           <button onClick={handleFavoriteClick}>
-            {favorites.some((fav) => fav.imdbID === movie.imdbID)
-              ? 'Remove Favorite'
-              : 'Add Favorite'}
+            {favorites.some((fav) => fav.imdbID === movie.imdbID) ? 'Remove Favorite' : 'Add Favorite'}
           </button>
           {!isDeleted && (
             <div className="button-row">
-              <button onClick={handleDeleteMovie} className="delete-button">Delete</button>
+              <button onClick={handleDeleteMovie} className="delete-button">
+                Delete
+              </button>
             </div>
           )}
         </div>

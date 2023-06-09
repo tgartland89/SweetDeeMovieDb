@@ -258,3 +258,18 @@ h1 span {
   background-color: red;
   color: white;
 }
+
+.movie-page-container {
+  background-color: rgb(32, 218, 60);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.home-page-container {
+  background-color: rgb(6, 117, 23);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
