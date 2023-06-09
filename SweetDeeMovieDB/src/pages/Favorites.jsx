@@ -4,7 +4,11 @@
 import React from 'react';
 import img7766 from '../assets/IMG_7766.jpg';
 
-export default function Favorites({ favorites }) {
+export default function Favorites({ favorites, onRemoveFavorite }) {
+  const handleRemoveFavorite = (movie) => {
+    onRemoveFavorite(movie);
+  };
+
   return (
     <div>
       <div className="circle-image-container">
@@ -16,15 +20,19 @@ export default function Favorites({ favorites }) {
       <h1>Favorites</h1>
       <div className="poster-container">
         {favorites.map((movie) => (
-          <img
-            key={movie.imdbID}
-            src={movie.Poster}
-            alt={movie.Title}
-            className="movie-poster"
-          />
+          <div key={movie.imdbID}>
+            <img
+              src={movie.Poster}
+              alt={movie.Title}
+              className="movie-poster"
+              onClick={() => handleRemoveFavorite(movie)}
+            />
+            <button onClick={() => handleRemoveFavorite(movie)}>
+              Remove Favorite
+            </button>
+          </div>
         ))}
       </div>
     </div>
   );
-  
 }

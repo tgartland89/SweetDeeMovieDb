@@ -5,9 +5,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-export default function MoviePage({ movie, favorites, onToggleFavorite }) {
+export default function MoviePage({ movie, favorites, onToggleFavorite, onRemoveFavorite }) {
   const handleFavoriteClick = () => {
-    onToggleFavorite(movie);
+    if (favorites.some((fav) => fav.imdbID === movie.imdbID)) {
+      onRemoveFavorite(movie);
+    } else {
+      onToggleFavorite(movie);
+    }
   };
 
   return (

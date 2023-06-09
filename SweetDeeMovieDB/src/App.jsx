@@ -110,7 +110,12 @@ function App() {
       console.error('Error saving movie favorite status on the backend:', error);
     }
   };
-  
+
+const handleRemoveFavorite = (movie) => {
+  const updatedFavorites = favorites.filter((fav) => fav.imdbID !== movie.imdbID);
+  setFavorites(updatedFavorites);
+  localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+};
   useEffect(() => {
     const storedFavorites = localStorage.getItem('favorites');
   
@@ -148,7 +153,7 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/"element={<Home movies={movies} favorites={favorites} onMovieClick={handleMovieClick} onToggleFavorite={handleToggleFavorite} />}/>
-            <Route path="/favorites" element={<Favorites favorites={favorites} />} />
+            <Route path="/favorites" element={<Favorites favorites={favorites} onRemoveFavorite={handleRemoveFavorite} />} />
             <Route path="/addmovie" element={<AddMovie onSubmit={handleAddMovie} />} />
             <Route path="/movie/:id" element={<MoviePage favorites={favorites} onToggleFavorite={handleToggleFavorite} movie={selectedMovie} />} />
           </Routes>
