@@ -45,7 +45,8 @@ export default function Home({ movies, favorites, onMovieClick, onToggleFavorite
               >
                 {movie.Title}
               </Link>
-              <button onClick={() => onDeleteMovie(movie)} className="delete-button">
+              {' '}
+              <button onClick={() => onDeleteMovie(movie)} className="delete-button"> 
               Delete
               </button>
             </li>

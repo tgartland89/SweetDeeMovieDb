@@ -130,7 +130,9 @@ const handleRemoveFavorite = (movie) => {
     }
   }, []);
 
-  // the delete button! I worked forever on this and didn't have to do an axios DELETE which was odd? 
+  // TRICKY:  the delete button! I worked forever on this and didn't have to do an axios DELETE function to get it to work?
+  // I'm still working on this becasue it doesn't seem to be triggering a deleter in my db JSON too? 
+   
   const handleDeleteMovie = (movie) => {
     const updatedMovies = movies.filter((m) => m.imdbID !== movie.imdbID);
     setMovies(updatedMovies);

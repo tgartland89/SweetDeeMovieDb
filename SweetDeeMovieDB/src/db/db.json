@@ -53,6 +53,24 @@
       "title": "Dogtooth",
       "poster": "https://m.media-amazon.com/images/M/MV5BMjIyOTkyMDE5N15BMl5BanBnXkFtZTcwNjIwNzQwMw@@._V1_SX300.jpg",
       "year": "2009"
+    },
+    {
+      "id": "tt0072890",
+      "title": "Dog Day Afternoon",
+      "poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "year": "1975"
+    },
+    {
+      "id": "tt11252248",
+      "title": "Dog",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjA2MDM2YjctYzNhNC00NGEzLWFmYWEtODExODFkNmUyOGE2XkEyXkFqcGdeQXVyODk2NDQ3MTA@._V1_SX300.jpg",
+      "year": "2022"
+    },
+    {
+      "id": "tt0120885",
+      "title": "Wag the Dog",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzRkZDVkMDItYjk3Mi00NDkyLThmODUtYzhkN2EwZmE2ZTljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+      "year": "1997"
     }
   ],
   "favorites": [
@@ -602,6 +620,31 @@
         "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5ZTc1NjAtMGNjNi00ZDY1LWIyM2EtZmM1NTcwMjkzNmMyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
       }
     ],
-    []
+    [],
+    [
+      {
+        "Title": "Ghost Dog: The Way of the Samurai",
+        "Year": "1999",
+        "imdbID": "tt0165798",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5ZTc1NjAtMGNjNi00ZDY1LWIyM2EtZmM1NTcwMjkzNmMyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "Ghost Dog: The Way of the Samurai",
+        "Year": "1999",
+        "imdbID": "tt0165798",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5ZTc1NjAtMGNjNi00ZDY1LWIyM2EtZmM1NTcwMjkzNmMyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Man Bites Dog",
+        "Year": "1992",
+        "imdbID": "tt0103905",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZDM3N2Q5MDktNTIyYi00ZTYxLWE4NWQtYjAyYzYxYmNlZTFmXkEyXkFqcGdeQXVyMTEyODk3NTgz._V1_SX300.jpg"
+      }
+    ]
   ]
 }

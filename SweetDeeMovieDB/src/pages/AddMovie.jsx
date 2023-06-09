@@ -24,9 +24,17 @@ function AddMovie({ onSubmit }) {
     }
   };
 
-  // The extractImdbID function is a helper function that extracts the IMDB ID from the provided IMDB link. 
+  // A part I am proud of: 
+
+//  Imagine you have a special code called an "IMDb ID" that helps you find information about a movie or TV show on the IMDb
+// Sometimes, when you're looking at a webpage that talks about a movie, the IMDb ID is hidden somewhere in the web address.
+// This code is like a small program that helps find and extract the IMDb ID from a web adddress- 
+// it helps by seraching for a specific address pattern 
+   
   // It uses a regular expression (/tt\d+/) to match the IMDB ID pattern (tt followed by digits).
-  // - researched through Google and ChatGpt 
+  // it checks if a match was found. If there is a match, it returns the matched IMDb ID 
+  // (which is the first element in the "match" array). If there is no match, it returns an empty string ('').
+  // - researched through Googe, YouTube, Wikipedia 
   
   const extractImdbID = (link) => {
     const regex = /tt\d+/;
