@@ -69,7 +69,9 @@ function App() {
   };
 
   const handleToggleFavorite = async (movie) => {
-    if (!favorites.some((fav) => fav.imdbID === movie.imdbID)) {
+    const isFavorite = favorites.some((fav) => fav.imdbID === movie.imdbID);
+  
+    if (!isFavorite) {
       setFavorites((prevFavorites) => [...prevFavorites, movie]);
     } else {
       setFavorites((prevFavorites) =>
@@ -78,7 +80,7 @@ function App() {
     }
   
     try {
-      const response = await axios.post('http://localhost:3000/favorites',movie);
+      const response = await axios.post('http://localhost:3000/favorites', movie);
       console.log('Movie favorite status saved on the backend:', response.data);
     } catch (error) {
       console.error('Error saving movie favorite status on the backend:', error);
