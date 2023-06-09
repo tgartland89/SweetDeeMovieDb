@@ -115,6 +115,23 @@ button:focus-visible {
 .nav-item a:hover {
   color: lightgray;
 }
+.nav-button {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.button-box {
+  margin: 5px;
+}
 
 .active {
   color: lightgray;

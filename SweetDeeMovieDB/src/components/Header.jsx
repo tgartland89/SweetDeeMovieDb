@@ -20,27 +20,28 @@ function Header({ onSearch }) {
       <nav className="navbar-nav">
         <ul className="nav-list">
           <li className="nav-item">
-           {/* NavLink component is used instead of the regular Link 
-           component from React Router to provide additional styling and functionality for the active link. */}
-           
-            <NavLink exact="true" to="/" activeclassname="active">
-              Home
-            </NavLink>
+            <div className="button-box">
+              <NavLink exact to="/" activeClassName="active" className="nav-button">
+                Home
+              </NavLink>
+            </div>
           </li>
           <li className="nav-item">
-            <NavLink to="/addmovie" activeclassname="active">
-              Add Movie
-            </NavLink>
+            <div className="button-box">
+              <NavLink to="/addmovie" activeClassName="active" className="nav-button">
+                Add a Movie
+              </NavLink>
+            </div>
           </li>
           <li className="nav-item">
-            <NavLink to="/favorites" activeclassname="active">
-              Favorites
-            </NavLink>
+            <div className="button-box">
+              <NavLink to="/favorites" activeClassName="active" className="nav-button">
+                Favorites
+              </NavLink>
+            </div>
           </li>
         </ul>
       </nav>
-      {/* After the navigation links, it conditionally renders the Search component using the logical AND (&&) operator 
-      and the isSearchVisible variable. If isSearchVisible is true, the Search component is rendered, passing the onSearch prop to it. */}
       {isSearchVisible && <Search onSearch={onSearch} />}
     </header>
   );

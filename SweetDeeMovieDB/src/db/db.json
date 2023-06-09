@@ -71,6 +71,24 @@
       "title": "Wag the Dog",
       "poster": "https://m.media-amazon.com/images/M/MV5BMzRkZDVkMDItYjk3Mi00NDkyLThmODUtYzhkN2EwZmE2ZTljXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
       "year": "1997"
+    },
+    {
+      "id": "tt0280609",
+      "title": "Dog Soldiers",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYzUyZjE4OGEtZjAwYi00Y2Q2LWI2M2MtYWY3YWM5YmQzNTcwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+      "year": "2002"
+    },
+    {
+      "id": "tt2023453",
+      "title": "Diary of a Wimpy Kid: Dog Days",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTc2MTk4MTk4Nl5BMl5BanBnXkFtZTcwMzgzOTY2Nw@@._V1_SX300.jpg",
+      "year": "2012"
+    },
+    {
+      "id": "tt0426883",
+      "title": "Alpha Dog",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjExODMyNzQzMl5BMl5BanBnXkFtZTYwNzMwNTg3._V1_SX300.jpg",
+      "year": "2006"
     }
   ],
   "favorites": [
@@ -631,6 +649,315 @@
       }
     ],
     [
+      {
+        "Title": "Ghost Dog: The Way of the Samurai",
+        "Year": "1999",
+        "imdbID": "tt0165798",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5ZTc1NjAtMGNjNi00ZDY1LWIyM2EtZmM1NTcwMjkzNmMyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+      },
+      {
+        "Title": "Man Bites Dog",
+        "Year": "1992",
+        "imdbID": "tt0103905",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BZDM3N2Q5MDktNTIyYi00ZTYxLWE4NWQtYjAyYzYxYmNlZTFmXkEyXkFqcGdeQXVyMTEyODk3NTgz._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "All Dogs Go to Heaven",
+        "Year": "1989",
+        "Rated": "G",
+        "Released": "17 Nov 1989",
+        "Runtime": "84 min",
+        "Genre": "Animation, Adventure, Comedy",
+        "Director": "Don Bluth, Gary Goldman, Dan Kuenster",
+        "Writer": "Don Bluth, Ken Cromar, Gary Goldman",
+        "Actors": "Dom DeLuise, Burt Reynolds, Loni Anderson",
+        "Plot": "A canine angel, Charlie, sneaks back to earth from heaven but ends up befriending an orphan girl who can speak to animals. In the process, Charlie learns that friendship is the most heavenly gift of all.",
+        "Language": "English",
+        "Country": "Ireland, United Kingdom, United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTI4ZWRmNTAtOWIyZC00Njk0LWIzZGItYjE0NDVlM2Q4ZWJjXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.7/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "44%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "50/100"
+          }
+        ],
+        "Metascore": "50",
+        "imdbRating": "6.7",
+        "imdbVotes": "43,770",
+        "imdbID": "tt0096787",
+        "Type": "movie",
+        "DVD": "06 Mar 2001",
+        "BoxOffice": "$27,100,027",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
+    ],
+    [
+      {
+        "Title": "All Dogs Go to Heaven",
+        "Year": "1989",
+        "Rated": "G",
+        "Released": "17 Nov 1989",
+        "Runtime": "84 min",
+        "Genre": "Animation, Adventure, Comedy",
+        "Director": "Don Bluth, Gary Goldman, Dan Kuenster",
+        "Writer": "Don Bluth, Ken Cromar, Gary Goldman",
+        "Actors": "Dom DeLuise, Burt Reynolds, Loni Anderson",
+        "Plot": "A canine angel, Charlie, sneaks back to earth from heaven but ends up befriending an orphan girl who can speak to animals. In the process, Charlie learns that friendship is the most heavenly gift of all.",
+        "Language": "English",
+        "Country": "Ireland, United Kingdom, United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTI4ZWRmNTAtOWIyZC00Njk0LWIzZGItYjE0NDVlM2Q4ZWJjXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.7/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "44%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "50/100"
+          }
+        ],
+        "Metascore": "50",
+        "imdbRating": "6.7",
+        "imdbVotes": "43,770",
+        "imdbID": "tt0096787",
+        "Type": "movie",
+        "DVD": "06 Mar 2001",
+        "BoxOffice": "$27,100,027",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "Rated": "R",
+        "Released": "25 Dec 1975",
+        "Runtime": "125 min",
+        "Genre": "Biography, Crime, Drama",
+        "Director": "Sidney Lumet",
+        "Writer": "Frank Pierson, P.F. Kluge, Thomas Moore",
+        "Actors": "Al Pacino, John Cazale, Penelope Allen",
+        "Plot": "Three amateur bank robbers plan to hold up a bank. A nice simple robbery: Walk in, take the money, and run. Unfortunately, the supposedly uncomplicated heist suddenly becomes a bizarre nightmare as everything that could go wrong d...",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "Won 1 Oscar. 14 wins & 21 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "8.0/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "96%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "86/100"
+          }
+        ],
+        "Metascore": "86",
+        "imdbRating": "8.0",
+        "imdbVotes": "263,102",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "DVD": "16 Dec 1997",
+        "BoxOffice": "$50,000,000",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
+    ],
+    [
+      {
+        "Title": "All Dogs Go to Heaven",
+        "Year": "1989",
+        "Rated": "G",
+        "Released": "17 Nov 1989",
+        "Runtime": "84 min",
+        "Genre": "Animation, Adventure, Comedy",
+        "Director": "Don Bluth, Gary Goldman, Dan Kuenster",
+        "Writer": "Don Bluth, Ken Cromar, Gary Goldman",
+        "Actors": "Dom DeLuise, Burt Reynolds, Loni Anderson",
+        "Plot": "A canine angel, Charlie, sneaks back to earth from heaven but ends up befriending an orphan girl who can speak to animals. In the process, Charlie learns that friendship is the most heavenly gift of all.",
+        "Language": "English",
+        "Country": "Ireland, United Kingdom, United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTI4ZWRmNTAtOWIyZC00Njk0LWIzZGItYjE0NDVlM2Q4ZWJjXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.7/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "44%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "50/100"
+          }
+        ],
+        "Metascore": "50",
+        "imdbRating": "6.7",
+        "imdbVotes": "43,770",
+        "imdbID": "tt0096787",
+        "Type": "movie",
+        "DVD": "06 Mar 2001",
+        "BoxOffice": "$27,100,027",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "Rated": "R",
+        "Released": "25 Dec 1975",
+        "Runtime": "125 min",
+        "Genre": "Biography, Crime, Drama",
+        "Director": "Sidney Lumet",
+        "Writer": "Frank Pierson, P.F. Kluge, Thomas Moore",
+        "Actors": "Al Pacino, John Cazale, Penelope Allen",
+        "Plot": "Three amateur bank robbers plan to hold up a bank. A nice simple robbery: Walk in, take the money, and run. Unfortunately, the supposedly uncomplicated heist suddenly becomes a bizarre nightmare as everything that could go wrong d...",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "Won 1 Oscar. 14 wins & 21 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "8.0/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "96%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "86/100"
+          }
+        ],
+        "Metascore": "86",
+        "imdbRating": "8.0",
+        "imdbVotes": "263,102",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "DVD": "16 Dec 1997",
+        "BoxOffice": "$50,000,000",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Ghost Dog: The Way of the Samurai",
+        "Year": "1999",
+        "imdbID": "tt0165798",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTQ5ZTc1NjAtMGNjNi00ZDY1LWIyM2EtZmM1NTcwMjkzNmMyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "All Dogs Go to Heaven",
+        "Year": "1989",
+        "Rated": "G",
+        "Released": "17 Nov 1989",
+        "Runtime": "84 min",
+        "Genre": "Animation, Adventure, Comedy",
+        "Director": "Don Bluth, Gary Goldman, Dan Kuenster",
+        "Writer": "Don Bluth, Ken Cromar, Gary Goldman",
+        "Actors": "Dom DeLuise, Burt Reynolds, Loni Anderson",
+        "Plot": "A canine angel, Charlie, sneaks back to earth from heaven but ends up befriending an orphan girl who can speak to animals. In the process, Charlie learns that friendship is the most heavenly gift of all.",
+        "Language": "English",
+        "Country": "Ireland, United Kingdom, United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMTI4ZWRmNTAtOWIyZC00Njk0LWIzZGItYjE0NDVlM2Q4ZWJjXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.7/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "44%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "50/100"
+          }
+        ],
+        "Metascore": "50",
+        "imdbRating": "6.7",
+        "imdbVotes": "43,770",
+        "imdbID": "tt0096787",
+        "Type": "movie",
+        "DVD": "06 Mar 2001",
+        "BoxOffice": "$27,100,027",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "Rated": "R",
+        "Released": "25 Dec 1975",
+        "Runtime": "125 min",
+        "Genre": "Biography, Crime, Drama",
+        "Director": "Sidney Lumet",
+        "Writer": "Frank Pierson, P.F. Kluge, Thomas Moore",
+        "Actors": "Al Pacino, John Cazale, Penelope Allen",
+        "Plot": "Three amateur bank robbers plan to hold up a bank. A nice simple robbery: Walk in, take the money, and run. Unfortunately, the supposedly uncomplicated heist suddenly becomes a bizarre nightmare as everything that could go wrong d...",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "Won 1 Oscar. 14 wins & 21 nominations total",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "8.0/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "96%"
+          },
+          {
+            "Source": "Metacritic",
+            "Value": "86/100"
+          }
+        ],
+        "Metascore": "86",
+        "imdbRating": "8.0",
+        "imdbVotes": "263,102",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "DVD": "16 Dec 1997",
+        "BoxOffice": "$50,000,000",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      },
       {
         "Title": "Ghost Dog: The Way of the Samurai",
         "Year": "1999",
