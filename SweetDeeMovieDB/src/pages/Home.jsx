@@ -33,20 +33,20 @@ export default function Home({ movies, favorites, onMovieClick, onToggleFavorite
         <h2 className="h2-white">Movies</h2>
         <div className="movie-list">
           <ul>
-          {sortedMovies.map((movie) => (
-  <li key={movie.imdbID}>
-    <Link
-      to="#"
-      className="movie-link"
-      onClick={() => {
-        onMovieClick(movie.imdbID);
-        handleMovieClick(movie);
-      }}
-    >
-      {movie.Title}
-    </Link>
-  </li>
-))}
+            {sortedMovies.map((movie) => (
+              <li key={movie.imdbID}>
+                <Link
+                  to="#"
+                  className="movie-link"
+                  onClick={() => {
+                    onMovieClick(movie.imdbID);
+                    handleMovieClick(movie);
+                  }}
+                >
+                  {movie.Title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
