@@ -14,7 +14,7 @@ export default function MoviePage({ movie, favorites, onToggleFavorite }) {
     <div>
       <h1>Sweet Dee's Movie dB</h1>
       {movie && (
-        <div>
+        <div key={movie.imdbID}> {/* Add the key here */}
           <h2>Now Playing</h2>
           <h1>{movie.Title}</h1>
           <img src={movie.Poster} alt={movie.Title} />

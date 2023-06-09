@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import leftCircleImage from '../assets/IMG_0442.jpg';
 import rightCircleImage from '../assets/IMG_7301.jpg';
 
-export default function Home({ movies, onMovieClick, onToggleFavorite, favorites }) {
+export default function Home({ movies, favorites, onMovieClick, onToggleFavorite }) {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const handleMovieClick = (movie) => {
@@ -17,6 +17,9 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
     onToggleFavorite(movie);
   };
 
+  // Sort movies array alphabetically by title
+  const sortedMovies = movies.slice().sort((a, b) => a.Title.localeCompare(b.Title));
+
   return (
     <div>
       <div className="circle left-circle">
@@ -26,17 +29,17 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
       <div className="circle right-circle">
         <img src={rightCircleImage} alt="Right Circle" />
       </div>
-      <div className="movie-list-container"> 
-        <h2 className="h2-white">Movies</h2> 
-        <div className="movie-list"> 
+      <div className="movie-list-container">
+        <h2 className="h2-white">Movies</h2>
+        <div className="movie-list">
           <ul>
-            {movies.map((movie) => (
-              <li key={movie.imdbID}>
+            {sortedMovies.map((movie) => (
+              <li key={movie.id}>
                 <Link
                   to="#"
                   className="movie-link"
                   onClick={() => {
-                    onMovieClick(movie.imdbID);
+                    onMovieClick(movie.id);
                     handleMovieClick(movie);
                   }}
                 >
@@ -46,11 +49,8 @@ export default function Home({ movies, onMovieClick, onToggleFavorite, favorites
             ))}
           </ul>
         </div>
-      </div> 
- {selectedMovie && (
-        // this is a conditional rendering block using the {selectedMovie && ...} syntax. 
-        // This block is only rendered if there is a selected movie inside the Now Playing block
-        
+      </div>
+      {selectedMovie && (
         <div>
           <h2 className="h2-white">Now Playing</h2>
           <h1>{selectedMovie.Title}</h1>
