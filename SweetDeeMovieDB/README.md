@@ -15,7 +15,7 @@ She can remove them from the Home page by clicking the "Add to Favorites" button
 
 1. Run `npm install` in your terminal (make sure you are cd'd into the SweetDeeMovieDB).
 2. Run `npm run dev`. This will run the localhost for the React app.
-3. In a new terminal, run `npm db`. This will run the back-end json db that holds the movies added as well as favorites.  
+3. In a new terminal, run `npm run db` in SweerDeeMoiveDB This will run the back-end json db that holds the movies added as well as favorites.  
 
 # Axios 
 

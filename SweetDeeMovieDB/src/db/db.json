@@ -6,17 +6,147 @@
       "Poster": "",
       "year": ""
     },
-    {}
-  ],
-
-
-  "favorites": [
-    { 
-      "id": 1,
-      "title": "",
-      "Poster": "",
-      "year": ""
+    {
+      "title": "Dogtooth",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIyOTkyMDE5N15BMl5BanBnXkFtZTcwNjIwNzQwMw@@._V1_SX300.jpg",
+      "year": "2009",
+      "id": 2
     },
-    {}
+    {
+      "title": "All Dogs Go to Heaven",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTI4ZWRmNTAtOWIyZC00Njk0LWIzZGItYjE0NDVlM2Q4ZWJjXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+      "year": "1989",
+      "id": 3
+    },
+    {
+      "title": "All Dogs Go to Heaven",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTI4ZWRmNTAtOWIyZC00Njk0LWIzZGItYjE0NDVlM2Q4ZWJjXkEyXkFqcGdeQXVyNTUyMzE4Mzg@._V1_SX300.jpg",
+      "year": "1989",
+      "id": 4
+    },
+    {
+      "title": "Air Bud",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzQxODE4MzEyNF5BMl5BanBnXkFtZTgwNjk2OTY4ODE@._V1_SX300.jpg",
+      "year": "1997",
+      "id": 5
+    },
+    {
+      "id": "tt3171246",
+      "title": "Pudsey the Dog: The Movie",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzg2MjcwOTkwM15BMl5BanBnXkFtZTgwOTM3MTEyMjE@._V1_SX300.jpg",
+      "year": "2014"
+    }
+  ],
+  "favorites": [
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 1
+    },
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 2
+    },
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 3
+    },
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 4
+    },
+    {
+      "id": "tt0072890",
+      "title": "Dog Day Afternoon",
+      "poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "year": "1975"
+    },
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 5
+    },
+    {
+      "Title": "Dog Day Afternoon",
+      "Year": "1975",
+      "imdbID": "tt0072890",
+      "Type": "movie",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+      "id": 6
+    },
+    [
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "Dog Day Afternoon",
+        "Year": "1975",
+        "imdbID": "tt0072890",
+        "Type": "movie",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BODExZmE2ZWItYTIzOC00MzI1LTgyNTktMDBhNmFhY2Y4OTQ3XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg"
+      }
+    ],
+    [
+      {
+        "Title": "Homeward Bound: The Incredible Journey",
+        "Year": "1993",
+        "Rated": "G",
+        "Released": "12 Feb 1993",
+        "Runtime": "84 min",
+        "Genre": "Adventure, Comedy, Drama",
+        "Director": "Duwayne Dunham",
+        "Writer": "Sheila Burnford, Caroline Thompson, Linda Woolverton",
+        "Actors": "Michael J. Fox, Sally Field, Don Alder",
+        "Plot": "A fun-loving American bulldog pup, a hilarious Himalayan cat, and a wise old golden retriever embark on a long trek through the rugged wilderness of the Sierra Nevada mountains in a quest to reach home and their beloved owners.",
+        "Language": "English",
+        "Country": "United States",
+        "Awards": "1 nomination",
+        "Poster": "https://m.media-amazon.com/images/M/MV5BMmRlODBjOWEtODViZS00NGNiLWEwNzYtYjIyZWQwZThhODBkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+        "Ratings": [
+          {
+            "Source": "Internet Movie Database",
+            "Value": "6.9/10"
+          },
+          {
+            "Source": "Rotten Tomatoes",
+            "Value": "87%"
+          }
+        ],
+        "Metascore": "N/A",
+        "imdbRating": "6.9",
+        "imdbVotes": "48,909",
+        "imdbID": "tt0107131",
+        "Type": "movie",
+        "DVD": "03 Sep 2002",
+        "BoxOffice": "$41,833,324",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+      }
+    ]
   ]
 }
