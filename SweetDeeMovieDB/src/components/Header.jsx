@@ -21,21 +21,22 @@ function Header({ onSearch }) {
         <ul className="nav-list">
           <li className="nav-item">
             <div className="button-box">
-              <NavLink exact to="/" activeClassName="active" className="nav-button">
+              <NavLink exact ="true" to="/" activeclassname="active" className="nav-button">
                 Home
               </NavLink>
             </div>
           </li>
           <li className="nav-item">
             <div className="button-box">
-              <NavLink to="/addmovie" activeClassName="active" className="nav-button">
+            <NavLink to="/addmovie" activeclassname="active" className="nav-button">
+
                 Add a Movie
               </NavLink>
             </div>
           </li>
           <li className="nav-item">
             <div className="button-box">
-              <NavLink to="/favorites" activeClassName="active" className="nav-button">
+              <NavLink to="/favorites" activeclassname="active" className="nav-button">
                 Favorites
               </NavLink>
             </div>
