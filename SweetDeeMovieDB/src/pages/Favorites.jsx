@@ -10,7 +10,7 @@ export default function Favorites({ favorites, onRemoveFavorite }) {
   };
 
   return (
-    <div>
+    <div className="favorites-container">
       <div className="circle-image-container">
         <div className="circle-image">
           <img src={img7766} alt="Circular Image" className="circle-image-img" />
