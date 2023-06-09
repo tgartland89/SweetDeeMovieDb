@@ -28,7 +28,7 @@ export default function Search({ onSearch }) {
   return (
     <form onSubmit={handleSubmit}>
       <input type="text" value={query} onChange={handleInputChange} />
-      <button type="submit">Filter</button>
+      <button type="submit">Search</button>
     </form>
   );
 }

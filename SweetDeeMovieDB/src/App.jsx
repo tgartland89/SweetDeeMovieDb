@@ -35,6 +35,8 @@ function App() {
       if (storedMovies) {
         setMovies(JSON.parse(storedMovies));
       } else {
+        
+// this is how GET,POST,PATCH looks with Axios
         const response = await axios.get(
           'http://www.omdbapi.com/?apikey=3deebcb6&s=dog&type=movie&plot=short&page=1&r=json'
         );
@@ -73,6 +75,7 @@ function App() {
     };
   
     try {
+// Axios POST 
       const response = await axios.post('http://localhost:3000/movies', newMovieObj);
       console.log('Movie saved on the backend:', response.data);
   
@@ -127,6 +130,7 @@ const handleRemoveFavorite = (movie) => {
     }
   }, []);
 
+  // the delete button! I worked forever on this and didn't have to do an axios DELETE which was odd? 
   const handleDeleteMovie = (movie) => {
     const updatedMovies = movies.filter((m) => m.imdbID !== movie.imdbID);
     setMovies(updatedMovies);
